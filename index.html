@@ -113,18 +113,29 @@
       border: 1px solid rgba(249,115,22,0.15);
     }
     .price-item {
-      display: flex;
-      justify-content: space-between;
-      padding: 1.1rem 0;
-      border-bottom: 1px solid rgba(255,255,255,0.08);
-      font-size: 1.15rem;
+      margin-bottom: 2rem;
     }
-    .price-item:last-child {
-      border-bottom: none;
+    .price-category {
+      font-size: 1.6rem;
+      color: #f97316;
+      margin-bottom: 0.8rem;
+      text-align: center;
     }
     .price {
-      color: #f97316;
+      font-size: 2.8rem;
       font-weight: bold;
+      color: #f97316;
+      text-align: center;
+      margin: 0.5rem 0;
+    }
+    .details ul {
+      list-style-type: disc;
+      padding-left: 1.8rem;
+      color: #cbd5e1;
+      font-size: 1.05rem;
+    }
+    .details li {
+      margin-bottom: 0.6rem;
     }
     .cta {
       text-align: center;
@@ -157,6 +168,7 @@
     @media (max-width: 768px) {
       h1 { font-size: 2.2rem; }
       .contact-bar a { display: block; margin: 0.8rem 0; }
+      .price { font-size: 2.4rem; }
     }
   </style>
 </head>
@@ -176,34 +188,70 @@
   <div class="container">
 
     <section>
-      <h2>Our Work</h2>
+      <h2>Our Work & Results</h2>
       <div class="gallery">
-        <img src="IMG_1681.PNG" alt="Detailing work example 1">
-        <img src="IMG_1682.PNG" alt="Detailing work example 2">
+        <img src="before-after-1.jpg" alt="Customer vehicles after detailing - Grey Kia Stinger and Blue Mustang">
+        <img src="pricing-flyer.jpg" alt="615 Royal Detailing Exterior and Interior Pricing Flyer">
       </div>
     </section>
 
     <section>
-      <h2>Popular Services & Pricing</h2>
+      <h2>Services & Pricing</h2>
       <div class="services">
+
         <div class="price-item">
-          <span>Exterior Detail - Basic</span>
-          <span class="price">$55</span>
+          <div class="price-category">EXTERIOR - BASIC</div>
+          <div class="price">$55</div>
+          <div class="details">
+            <ul>
+              <li>Hand Wash</li>
+              <li>Bug & Tar Removal</li>
+              <li>Wheels & Tires Cleaned</li>
+              <li>Exterior Spray Sealant</li>
+            </ul>
+          </div>
         </div>
+
         <div class="price-item">
-          <span>Exterior Detail - Premium</span>
-          <span class="price">$85</span>
+          <div class="price-category">EXTERIOR - PREMIUM</div>
+          <div class="price">$85</div>
+          <div class="details">
+            <ul>
+              <li>Hand Wash</li>
+              <li>Bug & Tar Removal</li>
+              <li>Wheels & Tires Cleaned</li>
+              <li>Exterior Spray Sealant</li>
+              <li>Exterior Wheel Cleaning</li>
+            </ul>
+          </div>
         </div>
+
         <div class="price-item">
-          <span>Interior Detail - Basic</span>
-          <span class="price">$65</span>
+          <div class="price-category">INTERIOR - BASIC</div>
+          <div class="price">$65</div>
+          <div class="details">
+            <ul>
+              <li>Vacuum</li>
+              <li>Interior Wipe Down</li>
+              <li>Interior Glass Cleaning</li>
+            </ul>
+          </div>
         </div>
+
         <div class="price-item">
-          <span>Interior Detail - Full</span>
-          <span class="price">$100</span>
+          <div class="price-category">INTERIOR - FULL</div>
+          <div class="price">$100</div>
+          <div class="details">
+            <ul>
+              <li>All Basic services</li>
+              <li>Carpet & Seat Shampooing</li>
+              <li>Plastic/Upholstery Conditioning</li>
+            </ul>
+          </div>
         </div>
+
       </div>
-      <p style="text-align:center; margin-top:1.5rem; color:#94a3b8;">
+      <p style="text-align:center; margin-top:2rem; color:#94a3b8; font-style:italic;">
         *Prices are starting rates and may vary based on vehicle size, condition, and add-ons — contact us for a custom quote
       </p>
     </section>
