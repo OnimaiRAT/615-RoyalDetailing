@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <meta name="description" content="615 Royal Detailing - Premium auto detailing, ceramic coating, and paint correction in Nashville & surrounding areas. Get your vehicle showroom-ready today!"/>
+  <meta name="description" content="615 Royal Detailing - See our premium auto detailing work in Nashville. Stunning before & after results on luxury cars, SUVs, and more."/>
   <title>615 Royal Detailing | Nashville's Premium Auto Detailing</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <style>
@@ -35,43 +35,15 @@
       border-bottom: 1px solid rgba(137,207,240,0.15);
     }
     h1 {
-      font-size: clamp(2.2rem, 6vw, 3.2rem);
+      font-size: clamp(2.4rem, 7vw, 3.6rem);
       color: #89CFF0;
       margin-bottom: 0.5rem;
       text-shadow: 0 3px 12px rgba(137,207,240,0.4);
     }
     .tagline {
-      font-size: 1.3rem;
+      font-size: 1.4rem;
       color: #b0b0b0;
       font-weight: 300;
-    }
-    .hero {
-      text-align: center;
-      padding: 5rem 5% 4rem;
-      background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.4));
-    }
-    .hero p {
-      font-size: 1.4rem;
-      max-width: 800px;
-      margin: 1.5rem auto;
-      color: #d0d0d0;
-    }
-    .btn {
-      display: inline-block;
-      background: #89CFF0;
-      color: #0a0a0a;
-      padding: 1.1rem 2.8rem;
-      font-size: 1.3rem;
-      font-weight: bold;
-      border-radius: 50px;
-      text-decoration: none;
-      transition: all 0.35s ease;
-      box-shadow: 0 8px 25px rgba(137,207,240,0.35);
-    }
-    .btn:hover {
-      background: #A5D8FF;
-      transform: translateY(-5px);
-      box-shadow: 0 14px 40px rgba(165,216,255,0.5);
     }
     .contact-bar {
       background: rgba(25,25,25,0.95);
@@ -86,18 +58,18 @@
       transition: color 0.3s;
     }
     .contact-bar a:hover { color: #A5D8FF; }
-    .container { max-width: 1240px; margin: 0 auto; padding: 0 5%; }
+    .container { max-width: 1280px; margin: 0 auto; padding: 0 5%; }
     section { margin: 5rem 0; }
     h2 {
       color: #89CFF0;
-      font-size: 2.5rem;
+      font-size: 2.8rem;
       text-align: center;
-      margin-bottom: 2rem;
+      margin-bottom: 1.5rem;
       position: relative;
     }
     h2::after {
       content: "";
-      width: 100px;
+      width: 120px;
       height: 5px;
       background: #89CFF0;
       position: absolute;
@@ -106,24 +78,47 @@
       transform: translateX(-50%);
       border-radius: 3px;
     }
+    .intro {
+      text-align: center;
+      font-size: 1.4rem;
+      color: #d0d0d0;
+      max-width: 900px;
+      margin: 0 auto 3rem;
+    }
     .gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-      gap: 2rem;
-      margin-top: 2.5rem;
+      grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+      gap: 2.2rem;
+      margin-top: 2rem;
     }
-    .gallery img {
-      width: 100%;
-      height: 280px;
-      object-fit: cover;
+    .gallery-item {
+      position: relative;
+      overflow: hidden;
       border-radius: 16px;
-      box-shadow: 0 12px 35px rgba(0,0,0,0.6);
+      box-shadow: 0 12px 40px rgba(0,0,0,0.7);
       transition: all 0.45s ease;
       border: 1px solid rgba(137,207,240,0.1);
     }
-    .gallery img:hover {
-      transform: scale(1.06) translateY(-8px);
-      box-shadow: 0 20px 50px rgba(137,207,240,0.22);
+    .gallery-item:hover {
+      transform: scale(1.05) translateY(-10px);
+      box-shadow: 0 25px 60px rgba(137,207,240,0.25);
+    }
+    .gallery img {
+      width: 100%;
+      height: 340px;
+      object-fit: cover;
+      display: block;
+    }
+    .gallery-caption {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background: linear-gradient(to top, rgba(0,0,0,0.85), transparent);
+      padding: 1.2rem 1rem 0.8rem;
+      font-size: 1.1rem;
+      text-align: center;
+      color: #e0e0e0;
     }
     .services-grid {
       display: grid;
@@ -144,8 +139,25 @@
     .details li { margin: 0.8rem 0; font-size: 1.1rem; color: #c8c8c8; }
     .details li::before { content: "✔ "; color: #89CFF0; margin-right: 0.6rem; }
     .testimonials { text-align: center; font-style: italic; color: #b0b0b0; }
-    .testimonial { margin: 2rem 0; max-width: 700px; margin-left: auto; margin-right: auto; }
+    .testimonial { margin: 2.5rem 0; max-width: 800px; margin-left: auto; margin-right: auto; }
     .cta-section { text-align: center; padding: 6rem 5% 4rem; background: rgba(20,20,20,0.7); border-radius: 20px; }
+    .btn {
+      display: inline-block;
+      background: #89CFF0;
+      color: #0a0a0a;
+      padding: 1.2rem 3rem;
+      font-size: 1.4rem;
+      font-weight: bold;
+      border-radius: 50px;
+      text-decoration: none;
+      transition: all 0.35s ease;
+      box-shadow: 0 10px 30px rgba(137,207,240,0.4);
+    }
+    .btn:hover {
+      background: #A5D8FF;
+      transform: translateY(-6px);
+      box-shadow: 0 16px 45px rgba(165,216,255,0.55);
+    }
     footer {
       background: #0a0a0a;
       text-align: center;
@@ -153,12 +165,13 @@
       color: #888;
       font-size: 0.95rem;
     }
-    .social-links a { color: #89CFF0; margin: 0 1rem; font-size: 1.6rem; }
+    .social-links a { color: #89CFF0; margin: 0 1.2rem; font-size: 1.8rem; }
     @media (max-width: 768px) {
-      h1 { font-size: 2.6rem; }
+      h1 { font-size: 2.8rem; }
       .contact-bar a, .contact-bar span { display: block; margin: 1rem 0; }
-      .price { font-size: 2.5rem; }
-      .gallery { gap: 1.5rem; }
+      .gallery { gap: 1.8rem; }
+      .gallery img { height: 280px; }
+      .price { font-size: 2.6rem; }
     }
   </style>
 </head>
@@ -166,7 +179,7 @@
 
   <header>
     <h1>615 Royal Detailing</h1>
-    <div class="tagline">Nashville's Premier Auto Detailing • Ceramic Coating • Paint Correction</div>
+    <div class="tagline">Nashville's Premier Auto Detailing</div>
   </header>
 
   <div class="contact-bar">
@@ -175,23 +188,33 @@
     <span><i class="fas fa-map-marker-alt"></i> Nashville & Surrounding Areas</span>
   </div>
 
-  <section class="hero">
-    <h2>Transform Your Ride Today</h2>
-    <p>Professional detailing that brings out the best in your vehicle. From basic washes to full ceramic protection — we deliver showroom results every time.</p>
-    <a href="https://instagram.com/615royaldetailing" target="_blank" class="btn">Book Now on Instagram</a>
-    <p style="margin-top:1.5rem;">or call <strong>(615) 972-9151</strong> for a free quote</p>
-  </section>
-
   <div class="container">
 
-    <section>
-      <h2>Our Work Gallery</h2>
+    <section id="our-work">
+      <h2>Our Work</h2>
+      <p class="intro">Check out our latest transformations — from deep interior refreshes to mirror-finish exteriors. Every vehicle gets the royal treatment.</p>
       <div class="gallery">
-        <img src="cars1.png" alt="Premium exterior detail on luxury sedan - before/after shine">
-        <img src="cars2.png" alt="Deep cleaned luxury SUV after full detail">
-        <img src="exterior1.png" alt="Ceramic coated vehicle with extreme gloss and water beading">
-        <img src="interior1.jpeg" alt="Fully restored interior - seats, carpets, dashboard conditioned">
-        <img src="motoclean.jpeg" alt="Motorcycle or moto-inspired vehicle after premium clean and detail">
+        <div class="gallery-item">
+          <img src="cars1.png" alt="Premium exterior detail on luxury sedan - mirror shine result">
+          <div class="gallery-caption">Luxury Sedan – Full Exterior Transformation</div>
+        </div>
+        <div class="gallery-item">
+          <img src="cars2.png" alt="Deep cleaned luxury SUV after complete detail">
+          <div class="gallery-caption">SUV – Showroom Fresh Exterior & Wheels</div>
+        </div>
+        <div class="gallery-item">
+          <img src="exterior1.png" alt="High-gloss exterior with water beading protection">
+          <div class="gallery-caption">Premium Gloss Finish – Exterior Close-up</div>
+        </div>
+        <div class="gallery-item">
+          <img src="interior1.jpeg" alt="Fully restored car interior – seats, carpets, dashboard">
+          <div class="gallery-caption">Full Interior Restoration – Like New</div>
+        </div>
+        <div class="gallery-item">
+          <img src="motoclean.jpeg" alt="Motorcycle or moto-inspired vehicle after premium detailing">
+          <div class="gallery-caption">Moto Clean – Precision Detail</div>
+        </div>
+        <!-- Add more real images here as <div class="gallery-item">...</div> -->
       </div>
     </section>
 
@@ -246,30 +269,6 @@
             </ul>
           </div>
         </div>
-        <div class="service-card">
-          <h3>Ceramic Coating</h3>
-          <div class="price">$399+</div>
-          <div class="details">
-            <ul>
-              <li>1-5 Year Protection Plans</li>
-              <li>Professional Application</li>
-              <li>Hydrophobic & UV Resistance</li>
-              <li>Paint Prep Included</li>
-            </ul>
-          </div>
-        </div>
-        <div class="service-card">
-          <h3>Paint Correction</h3>
-          <div class="price">$250+</div>
-          <div class="details">
-            <ul>
-              <li>Swirl/Scratch Removal</li>
-              <li>1-3 Step Polish</li>
-              <li>Finishing Sealant</li>
-              <li>Custom Levels Available</li>
-            </ul>
-          </div>
-        </div>
       </div>
       <p style="text-align:center; margin:3rem 0; color:#a0a0a0; font-style:italic;">
         *Starting prices — varies by vehicle size, condition & add-ons. Contact for accurate custom quote.
@@ -279,20 +278,19 @@
     <section class="testimonials">
       <h2>What Our Customers Say</h2>
       <div class="testimonial">
-        <p>"My black SUV looks better than the day I bought it — insane gloss after ceramic! Best detailer in Nashville."</p>
+        <p>"My black SUV looks better than the day I bought it — insane gloss! Best detailer in Nashville."</p>
         <p><strong>— Jake M., Brentwood</strong></p>
       </div>
       <div class="testimonial">
         <p>"Interior was filthy from kids & dogs. They made it brand new. Highly recommend 615 Royal!"</p>
         <p><strong>— Sarah T., Franklin</strong></p>
       </div>
-      <!-- Add more real testimonials as you get them -->
     </section>
 
     <div class="cta-section">
-      <h2>Ready for a Showroom Finish?</h2>
-      <a href="https://instagram.com/615royaldetailing" target="_blank" class="btn">Message Us to Book</a>
-      <p style="margin:2rem 0 1rem; font-size:1.3rem;">Call or DM for fast quotes & availability</p>
+      <h2>Ready for Results Like These?</h2>
+      <a href="https://instagram.com/615royaldetailing" target="_blank" class="btn">Book Your Detail Now</a>
+      <p style="margin:2.5rem 0 1.5rem; font-size:1.4rem;">DM on Instagram or call for a quick quote</p>
       <p><strong>(615) 972-9151</strong> • Nashville & Surrounding Areas</p>
     </div>
 
@@ -301,10 +299,9 @@
   <footer>
     <div class="social-links">
       <a href="https://instagram.com/615royaldetailing" target="_blank"><i class="fab fa-instagram"></i></a>
-      <!-- Add Facebook/X if you have them -->
     </div>
-    <p style="margin:1.5rem 0;">© 2026 615 Royal Detailing • All rights reserved • Serving Nashville, TN & Surrounding Areas</p>
-    <p style="font-size:0.9rem;">Mobile Detailing • Ceramic Pros • Paint Perfection</p>
+    <p style="margin:1.8rem 0;">© 2026 615 Royal Detailing • All rights reserved • Serving Nashville, TN & Surrounding Areas</p>
+    <p style="font-size:0.95rem;">Mobile Detailing • Premium Washes • Interior Restoration</p>
   </footer>
 
 </body>
